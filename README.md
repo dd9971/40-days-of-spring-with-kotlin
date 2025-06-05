@@ -2,6 +2,7 @@
 
 This is my personal 40-day challenge to learn and document the Spring Framework using Kotlin and PostgreSQL.  
 Each day includes a README with a short summary, one or more classes, and corresponding tests – without using Mockito.
+Short periodic lessons for working on habits
 
 ---
 
