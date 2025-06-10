@@ -1,6 +1,9 @@
 package com.fortyday.challenge.day2
 
-class SecondDay  {
+import org.springframework.stereotype.Component
+
+@Component
+class SecondDay {
 
     fun fibonacciSequence(i: Int): IntArray {
         val fibonacciArray = IntArray(i)
