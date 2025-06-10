@@ -13,4 +13,13 @@ class SecondDay  {
 
         return fibonacciArray
     }
+
+    fun factorial(n: Int): Long {
+        require(n >= 0) { "n must be non-negative" }
+        var result = 1L
+        for (j in 2..n) {
+            result *= j
+        }
+        return result
+    }
 }

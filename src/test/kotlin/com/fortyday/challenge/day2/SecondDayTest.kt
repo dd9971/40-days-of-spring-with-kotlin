@@ -25,4 +25,17 @@ class SecondDayTest {
         val expected = intArrayOf(0, 1, 1, 2, 3)
         assertThat(expected).isEqualTo(result)
     }
+
+    @Test
+    @DisplayName("Should return factorial for n=5")
+    fun test02() {
+        //given
+        val n = 5
+
+        //when
+        val result = secondDay!!.factorial(n)
+
+        //then
+        assertThat(result).isEqualTo(120L)
+    }
 }
