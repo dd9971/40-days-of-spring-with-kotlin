@@ -9,10 +9,10 @@ Short periodic lessons for working on habits
 ## 🧭 Week 1: Kotlin + Spring Boot Basics
 
 | Day | Topic                                                                                  |
-| --- | -------------------------------------------------------------------------------------- |
+| --- |----------------------------------------------------------------------------------------|
 | 1   | PostgreSQL configuration in Spring Boot (DB setup, connection test, `application.yml`) |
 | 2   | Kotlin syntax basics – variables, functions, data classes                              |
-| 3   | Create Spring Boot project with Kotlin + Gradle                                        |
+| 3   | Spring Data JPA - entity, repository, CRUD                                             |
 | 4   | Project structure & configuration (Gradle KTS, `dev` profile, packages)                |
 | 5   | First REST controller in Kotlin                                                        |
 | 6   | Request mapping – `@RequestParam`, `@PathVariable`, `@RequestBody`                     |
