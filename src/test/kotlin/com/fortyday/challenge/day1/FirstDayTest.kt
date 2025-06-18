@@ -15,7 +15,7 @@ import org.testcontainers.junit.jupiter.Testcontainers
 
 @SpringBootTest
 @Testcontainers
-class FirstDayTest {
+internal class FirstDayTest {
 
     companion object {
         // 1) Define container
