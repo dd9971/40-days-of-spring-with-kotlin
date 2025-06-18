@@ -3,7 +3,7 @@ package com.fortyday.challenge.day2
 import org.springframework.stereotype.Component
 
 @Component
-class SecondDay {
+internal class SecondDay {
 
     fun fibonacciSequence(i: Int): IntArray {
         val fibonacciArray = IntArray(i)
@@ -13,7 +13,6 @@ class SecondDay {
         for (j in 2..<i) {
             fibonacciArray[j] = fibonacciArray[j - 1] + fibonacciArray[j - 2]
         }
-
         return fibonacciArray
     }
 }
