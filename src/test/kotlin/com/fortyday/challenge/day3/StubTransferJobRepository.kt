@@ -9,6 +9,10 @@ import java.util.Optional
 import java.util.function.Function
 
 class StubTransferJobRepository : TransferJobRepository {
+
+    private val storage = mutableMapOf<String, TransferJob>()
+
+
     override fun flush() {
         TODO("Not yet implemented")
     }
@@ -103,11 +107,12 @@ class StubTransferJobRepository : TransferJobRepository {
     }
 
     override fun <S : TransferJob?> save(entity: S & Any): S & Any {
-        return entity;
+        storage[entity.id] = entity
+        return entity
     }
 
     override fun findById(id: String): Optional<TransferJob?> {
-        return Optional.ofNullable(TransferJob()) as Optional<TransferJob?>
+        return Optional.ofNullable(storage[id]) as Optional<TransferJob?>
     }
 
     override fun existsById(id: String): Boolean {
