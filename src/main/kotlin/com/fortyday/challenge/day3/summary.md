@@ -11,7 +11,10 @@
 - The `ThirdDay` service:
     - Generates a new `TransferJob` with dummy data,
     - Saves it to the repository,
-    - Retrieves it immediately by its ID.
+    - Retrieves it by its ID.
+    - List entities 
+    - Delete entity by ID
+    - Update entity with pessimistic lock
 
 ### 3. REST API (Controller)
 - Created a controller `TransferJobController`.
