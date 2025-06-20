@@ -142,4 +142,8 @@ class StubTransferJobRepository : TransferJobRepository {
     override fun deleteAll() {
         TODO("Not yet implemented")
     }
+
+    override fun findByIdForUpdate(id: String): Optional<TransferJob> {
+        TODO("Not yet implemented")
+    }
 }
