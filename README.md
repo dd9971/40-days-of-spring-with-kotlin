@@ -16,7 +16,7 @@ Short periodic lessons for working on habits
 | 4   | Project structure & configuration (Gradle KTS, `dev` profile, packages)                |
 | 5   | First REST controller in Kotlin                                                        |
 | 6   | Request mapping – `@RequestParam`, `@PathVariable`, `@RequestBody`                     |
-| 7   | Summary, refactor & testing REST controller with MockMvc (no Mockito)                  |
+| 7   | Summary, refactor & testing REST controller with `MockMvc` (no Mockito)                |
 
 
 ---
