@@ -28,8 +28,8 @@
 - Added:
     - A custom `ObjectMapper` to work with Kotlin and format dates
     - A `DateTimeFormatter` with the pattern `yyyy-MM-dd HH:mm:ss`
-    - A simple CORS setup (e.g. for React frontend on `localhost:3000`)
-
+    - A simple CORS setup
+  
 ### 5. Tests for configuration
 - Created `AppConfigTest.kt` with tests for:
     - Checking if the `ObjectMapper` bean works correctly

@@ -3,7 +3,7 @@ plugins {
 	kotlin("plugin.spring") version "1.9.25"
 	kotlin("plugin.jpa") version "1.9.25"
 
-	id("org.springframework.boot") version "3.2.5" // Możesz wrócić do 3.5.0, ale 3.2.5 stabilne
+	id("org.springframework.boot") version "3.2.5"
 	id("io.spring.dependency-management") version "1.1.5"
 }
 
@@ -33,14 +33,14 @@ dependencies {
 	// PostgreSQL driver
 	runtimeOnly("org.postgresql:postgresql")
 
-	// Lombok (tylko jeśli naprawdę potrzebujesz)
+	// Lombok
 	compileOnly("org.projectlombok:lombok")
 	annotationProcessor("org.projectlombok:lombok")
 
 	// Dev tools
 	developmentOnly("org.springframework.boot:spring-boot-devtools")
 
-	// Testy
+	// Tests
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
 	testImplementation("org.springframework.security:spring-security-test")
@@ -69,10 +69,10 @@ tasks.withType<Test> {
 	useJUnitPlatform()
 }
 
-// Konfiguracja do uruchamiania z profilem `dev`
+
 tasks.register<JavaExec>("runDev") {
 	group = "application"
-	mainClass.set("com.fortyday.DevApplicationKt")
+	mainClass.set("com.fortyday.challenge.DevApplication")
 	classpath = sourceSets["main"].runtimeClasspath
 	args = listOf("--spring.profiles.active=dev")
 }
